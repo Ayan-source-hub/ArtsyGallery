@@ -1,0 +1,15 @@
+{
+  "name": "ArtsyGalleryWebsite",
+  "description": "A website showcasing various art pieces from different artists.",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "contact": {
+    "email": "your.email@example.com",
+    "phone": "+1234567890"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/ArtsyGalleryWebsite.git"
+  },
+  "license": "MIT"
+}
