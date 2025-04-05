@@ -61,7 +61,7 @@ public class registerservlet extends HttpServlet {
 			pst.setString(9, upostalcode);
 			
 			int rowCount = pst.executeUpdate();
-			dispatcher = request.getRequestDispatcher("xample2.jsp");
+			dispatcher = request.getRequestDispatcher("xample2.html");
 			if(rowCount > 0) {
 				request.setAttribute("status", "success");
 			}else {
