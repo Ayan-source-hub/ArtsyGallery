@@ -39,12 +39,12 @@ public class signin extends HttpServlet {
 		ResultSet rs = pst.executeQuery();
 		if(rs.next()) {
 			session.setAttribute("name", rs.getString("uname"));
-			dispatcher = request.getRequestDispatcher("home2.jsp");
+			dispatcher = request.getRequestDispatcher("home2.html");
 		}else if ("roy97346265@gmail.com".equals(uemail) && "password".equals(upassword)) {
-            response.sendRedirect("admin.jsp");
+            response.sendRedirect("admin.html");
         }else {
 			request.setAttribute("status", "failed");
-			dispatcher = request.getRequestDispatcher("xample2.jsp");
+			dispatcher = request.getRequestDispatcher("xample2.html");
 		}
 		dispatcher.forward(request,  response);
 	}  catch (Exception e) {
