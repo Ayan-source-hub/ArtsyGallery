@@ -50,7 +50,7 @@ public class upload extends HttpServlet {
 
             // Execute the query
             int rowCount = pst.executeUpdate();
-            dispatcher = request.getRequestDispatcher("upload.jsp");
+            dispatcher = request.getRequestDispatcher("upload.html");
 
             // Set status based on query result
             if (rowCount > 0) {
