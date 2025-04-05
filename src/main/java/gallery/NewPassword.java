@@ -39,10 +39,10 @@ public class NewPassword extends HttpServlet {
 				int rowCount = pst.executeUpdate();
 				if (rowCount > 0) {
 					request.setAttribute("status", "resetSuccess");
-					dispatcher = request.getRequestDispatcher("xample2.jsp");
+					dispatcher = request.getRequestDispatcher("xample2.html");
 				} else {
 					request.setAttribute("status", "resetFailed");
-					dispatcher = request.getRequestDispatcher("xample2.jsp");
+					dispatcher = request.getRequestDispatcher("xample2.html");
 				}
 				dispatcher.forward(request, response);
 			} catch (Exception e) {
