@@ -13,11 +13,11 @@
   </head>
   <body>
   
-  <input type="hidden" id="status" value="<%= request.getAttribute("status") %>">
+  <input type="hidden" id="status" value="<%= request.getAttribute("status")">
   
     <section class="container">
       <header>Registration Form</header>
-      <form method="post" action="registerservlet" class="form" id="form">
+<!--       <form method="post" action="registerservlet" class="form" id="form"> -->
         <div class="input-box">
           <label>Full Name</label>
           <input type="text" name="name" id="name" placeholder="Enter full name" required />
@@ -78,7 +78,7 @@
           </div>
         </div>
         <button>Submit</button>
-      </form>
+<!--       </form> -->
     </section>
     
     <!-- JS -->
