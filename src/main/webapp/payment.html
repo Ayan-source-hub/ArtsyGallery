@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
@@ -719,7 +718,7 @@ button:hover{
                         </a>
                         <hr style="border:1px solid #ccc; margin: 0 15px;">
                         <div class="card-details">
-                            <form onsubmit="return payNow()">
+<!--                             <form onsubmit="return payNow()"> -->
                                 <p>Card Number</p>
                                 <div class="c-number" id="c-number">
                                     <input id="number" class="cc-number"
@@ -751,16 +750,16 @@ button:hover{
                                     id="email" required>
                                 </div>
                                 <button type="submit">PAY NOW</button>
-                            </form>
+<!--                             </form> -->
                         </div>
                         <div class="upi-details" style="display:none;">
-                            <form onsubmit="return payWithUPI()">
+<!--                             <form onsubmit="return payWithUPI()"> -->
                                 <p>UPI Payment</p>
                                 <input type="text" placeholder="Enter UPI ID" id="upi-id" required>
                                 <p>OTP</p>
                                 <input type="text" placeholder="Enter OTP" id="otp" required>
                                 <button type="submit">Pay with UPI</button>
-                            </form>
+<!--                             </form> -->
                         </div>
                         <div class="qr-details" style="display:none;">
                             <p>Scan QR Code</p>
