@@ -49,13 +49,13 @@ body
 }
 
 .collection a{
-    margin-left:1500px;
+    margin-left:1400px;
     color:#0a0909;
 }
 
 .collection .content{
     height: 36rem;
-    width: 35rem;
+    width: 31rem;
     padding-top: -50px;
     /* background-color: #1b1f2a; */
     background: linear-gradient(to right, #ff5f6d, #ffc371);
