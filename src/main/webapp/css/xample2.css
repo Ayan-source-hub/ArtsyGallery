@@ -58,6 +58,7 @@
             font-size: 1em;
             cursor: pointer;
             margin-top: 20px;
+            transition: transform 0.6s ease-in-out;
         }
         .form-container button:hover {
             background: linear-gradient(to right, #1a1a3d, #4b2c4b);
@@ -106,12 +107,24 @@ label{
     font-weight: bold;
 }
 
-button{
+.form-container button{
     padding: 5px;
     border: none;
     border-bottom: 1px solid rgb(137, 137, 137);
     margin-top: 10px;
     outline: none;
+    max-width:200px;
+    margin-left: 70px;
+    margin-top:70px;
+    position:relative;
+    transition: transform 0.6s ease-in-out;
+}
+.form-container .forget-password{
+    margin-left: 105px;
+    margin-top: 10px;
+    color: #0c0b0c;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* .login-btn{
@@ -124,3 +137,57 @@ button{
     border-radius: 5px;
     margin-top: 30px;
 } */
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+    .image-container {
+        width: 100%;
+        border-radius: 50%;
+        position:absolute;
+        top: 0px;
+        right: 0;
+        height: 46%;
+        transition: transform 0.6s ease-in-out;
+        transform: translateX(0);
+    }
+    .image-container img {
+        border-radius: 5%;
+    }
+    .container.active .form-container:first-child {
+        transform: translateX(0);
+    }
+    .container.active .form-container:last-child {
+        transform: translateX(0);
+    }
+    .container.active .image-container {
+        transform: translateY(100%);
+    }
+    .form-container h2 {
+        margin-bottom: -10px;
+    }
+    .form-container button{
+        padding: 5px;
+        max-width:200px;
+        margin-left: 110px;
+        position:none;
+        transition: transform 0.6s ease-in-out;
+    }
+    .form-container .forget-password {
+        margin-left: 155px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .form-container input {
+        width: 100%;
+        padding: 2px;
+        margin-bottom: 5px;
+    }
+}
