@@ -1,14 +1,44 @@
 const container = document.getElementById('container');
-const toLogin = document.getElementById('to-login');
-const toRegister = document.getElementById('to-register');
 
-toLogin.addEventListener('click', () => {
-    container.classList.add("active");
-});
+function setupEventListeners() {
+    // Get fresh button elements each time
+    const toLogin = document.getElementById('to-login');
+    const toRegister = document.getElementById('to-register');
 
-toRegister.addEventListener('click', () => {
-    container.classList.remove("active");
-});
+    // Remove existing listeners by replacing elements
+    const newToLogin = toLogin.cloneNode(true);
+    const newToRegister = toRegister.cloneNode(true);
+
+    toLogin.parentNode.replaceChild(newToLogin, toLogin);
+    toRegister.parentNode.replaceChild(newToRegister, toRegister);
+
+    // Set up logic again
+    if (window.innerWidth < 768) {
+        newToLogin.addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+
+        newToRegister.addEventListener('click', () => {
+            container.classList.add("active");
+        });
+    } else {
+        newToRegister.addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+
+        newToLogin.addEventListener('click', () => {
+            container.classList.add("active");
+        });
+    }
+}
+
+// Initial run
+setupEventListeners();
+
+// Rerun on resize
+window.addEventListener('resize', setupEventListeners);
+
+
 
 
 //test code
