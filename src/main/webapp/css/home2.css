@@ -297,7 +297,7 @@ section{
 }
 
 .home{
-   background: url("../images/banner.jpeg") no-repeat;
+    background: url(banner.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -552,7 +552,7 @@ background: #fff;
     color: #fff;
 }
 .newsletter{
-    background:url("../images/oil1.jpeg") no-repeat;
+    background:url(oil1.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -898,10 +898,10 @@ background: #fff;
     color: #eee;
     /* position: fixed; */
     position: fixed; /* Acts as a base for absolute positioning */
-    overflow:hidden;
+    overflow:auto;
     top: 0;
     right: -400px;
-    bottom: 0;
+    bottom: -250px;
     display:grid;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s;
@@ -917,6 +917,8 @@ background: #fff;
 }
 .cartTab h1{
     padding: 20px;
+    position:fixed;
+    text-align: center;
     margin: 0;
     font-size: 40px;
     font-weight: 400;
@@ -931,10 +933,10 @@ background: #fff;
     font-family: Poppins;
     font-weight: 500;
     cursor: pointer;
-    height: 120px;
+    height: 80px;
     width: 230px;
     margin-left: -30px;
-    margin-top: 80px;
+    margin-top: 580px;
 }
 .cartTab .close{
     background-color: #eee;
@@ -1183,6 +1185,9 @@ footer{
     section{
         padding: 3rem 2rem;
     }
+    .home .row .content{ 
+        margin-top: 30px;
+    }
 }
 
 @media(max-width:768px){
@@ -1250,6 +1255,8 @@ footer{
 
     .bottom-navbar{
         display:block;
+        position: fixed;
+        height: 50px;
     }
 
     .bottom-navbar a{
