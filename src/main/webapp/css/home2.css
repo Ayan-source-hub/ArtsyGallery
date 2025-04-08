@@ -88,7 +88,7 @@ section{
 
 .header{
     position: sticky;
-    top: -50px;
+    top: 0px;
     z-index: 2;
 }
 .header .header-1{
@@ -552,7 +552,7 @@ background: #fff;
     color: #fff;
 }
 .newsletter{
-    background:url(oil1.jpeg) no-repeat;
+    background:url(images/oil1.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
