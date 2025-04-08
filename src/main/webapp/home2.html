@@ -1,8 +1,3 @@
-<!-- <%
-	if(session.getAttribute("name")==null){
-		response.sendRedirect("xample2.html");
-		}
- %> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!--font awesome cdn link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!--Custom css file link-->
     <link rel="stylesheet" href="css/home2.css">
-   <!--  <link rel="stylesheet" href="css/login.css"> -->
 
 </head>
 <body>
@@ -56,18 +50,8 @@
                         <button class="checkOut">Check Out</button>
                     </div>
                 </div> -->
-
-                <div id="login-btn" class="fas f-user">
-             	<p>
-             	<a class="" href="index.html">Logout</a>
-             	
-             	
-             	<a style="background-color:#27ae60;border-radius:50px;padding-right:10px;padding-left:10px;color:white;" href="#">
-<!-- 			<%=session.getAttribute("name") %> -->
-		</a>
-             	</p>
-             
-                </div> 
+                <a href="logout.html"> 
+                <div id="login-btn" class="fas fa-user"></div></a>
             </div>
         </div>
 
@@ -78,7 +62,7 @@
             <div class="listCart">
                 <h1>Shopping Cart</h1>
             </div>
-            <div class="btn" style="margin-top:550px;">
+            <div class="btn">
                 <button class="close">CLOSE</button>
                 <button class="checkOut">Check Out</button>
             </div>
@@ -90,7 +74,7 @@
                 <a href="#featured">featured</a>
                 <a href="#arrivals">arrivals</a>
                 <a href="#reviews">reviews</a>
-                <a href="upload.html">Upload</a>
+                <a href="#blogs">blogs</a>
             </nav>
         </div>
      </header>
@@ -102,12 +86,13 @@
         <a href="#home" class="fas fa-home"></a>
         <a href="#featured" class="fas fa-list"></a>
         <a href="#arrivals" class="fas fa-tags"></a>
-        <a href="#reviews" class="fas fa-comments"></a>
-        <a href="#blogs" class="fas fa-blogs"></a>
+        <!-- <a href="#reviews" class="fas fa-comments"></a> -->
+        <a href="#blogs" class="fas fa-comments"></a>
+        <a href="upload.html" class="fas fa-edit"></a>
     </nav>
 
     <!--login form-->
-     <div class="login-form-container">
+    <div class="login-form-container">
         <div id="close-login-btn" class="fas fa-times"></div>
         <form action="">
             <h3>sign in</h3>
@@ -123,7 +108,7 @@
             <p> Forget password ?<a href="#">click here</a></p>
             <p>don't have an acconut ?<a href='#'>create one</a></p>
         </form>
-    </div>  
+    </div>
 
     
     <!-- home section start -->
@@ -153,13 +138,13 @@
 
     <div class="swiper books-slider">
         <div class="swiper-wrapper">
-        <a href="#" class="swiper-slide"><img src="images/oil2.jpeg" alt=></a>
+        <a href="#" class="swiper-slide"><img src="images/oil1.jpeg" alt=></a>
         <a href="#" class="swiper-slide"><img src="images/sk1.jpeg" alt=></a>
         <a href="#" class="swiper-slide"><img src="images/wa1.jpeg" alt=></a>
         <a href="#" class="swiper-slide"><img src="images/sk2.jpeg" alt=></a>
-        <a href="#" class="swiper-slide"><img src="images/oil2.jpeg" alt=></a>
+        <a href="#" class="swiper-slide"><img src="images/oil1.jpeg" alt=></a>
         </div>
-        <img src="images/img stand.png" class="stand" alt="" style="margin-top: -300px;">
+        <img src="img stand.png" class="stand" alt="" style="margin-top: -300px;">
     </div>
    </div>
 
@@ -211,7 +196,7 @@
     
 <section class="featured" id="featured">
 
-    <h1 class="heading"> <span>featured paintings</span> </h1>
+    <h1 class="heading"> <span>featured books</span> </h1>
     
     <div class="swiper featured-slider">
     
@@ -224,10 +209,10 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <div class="image">
-           <a href="onepic.html" ><img src="images/oil1.jpeg" alt=""></a>
+            <img src="images/oil1.jpeg" alt="">
         </div>
         <div class="content">
-            <h3>featured painting</h3>
+            <h3>featured books</h3>
             <div class="price">$15.99 <span>$20.99</span></div>
             <a href="#" class="btn addCart">add to cart</a>
         </div>
@@ -240,10 +225,10 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <div class="image">
-           <a href="onepic.html" ><img src="images/oil1.jpeg" alt=""></a>
+            <img src="images/oil1.jpeg" alt="">
         </div>
         <div class="content">
-            <h3>featured painting</h3>
+            <h3>featured books</h3>
             <div class="price">$15.99 <span>$20.99</span></div>
             <a href="#" class="btn">add to cart</a>
         </div>
@@ -256,10 +241,10 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <div class="image">
-            <a href="onepic.html" ><img src="images/oil1.jpeg" alt=""></a>
+            <img src="images/oil1.jpeg" alt="">
         </div>
         <div class="content">
-            <h3>featured painting</h3>
+            <h3>featured books</h3>
             <div class="price">$15.99 <span>$20.99</span></div>
             <a href="#" class="btn">add to cart</a>
         </div>
@@ -272,10 +257,10 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <div class="image">
-           <a href="onepic.html" ><img src="images/oil1.jpeg" alt=""></a>
+            <img src="images/oil1.jpeg" alt="">
         </div>
         <div class="content">
-            <h3>featured painting</h3>
+            <h3>featured books</h3>
             <div class="price">$15.99 <span>$20.99</span></div>
             <a href="#" class="btn">add to cart</a>
         </div>
@@ -288,10 +273,10 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <div class="image">
-            <a href="onepic.html" ><img src="images/oil1.jpeg" alt=""></a>
+            <img src="images/oil1.jpeg" alt="">
         </div>
         <div class="content">
-            <h3>featured painting</h3>
+            <h3>featured books</h3>
             <div class="price">$15.99 <span>$20.99</span></div>
             <a href="#" class="btn">add to cart</a>
         </div>
@@ -304,10 +289,10 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <div class="image">
-            <a href="onepic.html" ><img src="images/oil1.jpeg" alt=""></a>
+            <img src="images/oil1.jpeg" alt="">
         </div>
         <div class="content">
-            <h3>featured painting</h3>
+            <h3>featured books</h3>
             <div class="price">$15.99 <span>$20.99</span></div>
             <a href="#" class="btn">add to cart</a>
         </div>
@@ -320,10 +305,10 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <div class="image">
-           <a href="onepic.html" ><img src="images/oil1.jpeg" alt=""></a>
+            <img src="images/oil1.jpeg" alt="">
         </div>
         <div class="content">
-            <h3>featured painting</h3>
+            <h3>featured books</h3>
             <div class="price">$15.99 <span>$20.99</span></div>
             <a href="#" class="btn">add to cart</a>
         </div>
@@ -336,10 +321,10 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <div class="image">
-           <a href="onepic.html" ><img src="images/oil1.jpeg" alt=""></a>
+            <img src="images/oil1.jpeg" alt="">
         </div>
         <div class="content">
-            <h3>featured painting</h3>
+            <h3>featured books</h3>
             <div class="price">$15.99 <span>$20.99</span></div>
             <a href="#" class="btn">add to cart</a>
         </div>
@@ -352,10 +337,10 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <div class="image">
-           <a href="onepic.html" ><img src="images/oil1.jpeg" alt=""></a>
+            <img src="images/oil1.jpeg" alt="">
         </div>
         <div class="content">
-            <h3>featured painting</h3>
+            <h3>featured books</h3>
             <div class="price">$15.99 <span>$20.99</span></div>
             <a href="#" class="btn">add to cart</a>
         </div>
@@ -367,10 +352,10 @@
             <a href="#" class="fas fa-eye"></a>
         </div>
         <div class="image">
-           <a href="onepic.html" ><img src="images/oil1.jpeg" alt=""></a>
+            <img src="images/oil1.jpeg" alt="">
         </div>
         <div class="content">
-            <h3>featured painting</h3>
+            <h3>featured books</h3>
             <div class="price">$15.99 <span>$20.99</span></div>
             <a href="#" class="btn">add to cart</a>
         </div>
@@ -622,7 +607,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="images/oil1.jpeg" alt="">
+                <img src="images/oil2.jpeg" alt="">
                 <h3>John Deo</h3>
                 <p>hdbhbchdcbbckbchbckbs</p>
                 <div class="stars">
@@ -635,7 +620,7 @@
                 </div>
             </div>
             <div class="swiper-slide box">
-            <img src="images/oil1.jpeg" alt="">
+            <img src="images/oil2.jpeg" alt="">
             <h3>John Deo</h3>
             <p>
                 hdbhbchdcbbckbchbckbskb</p>
@@ -649,7 +634,7 @@
             </div>
         </div>
         <div class="swiper-slide box">
-        <img src="images/oil1.jpeg" alt="">
+        <img src="images/oil2.jpeg" alt="">
         <h3>John Deo</h3>
         <p>
             hdbhbchdcbbckbchbckbskb</p>
@@ -663,7 +648,7 @@
         </div>
     </div>
     <div class="swiper-slide box">
-                <img src="images/oil1.jpeg" alt="">
+                <img src="images/oil2.jpeg" alt="">
                 <h3>John Deo</h3>
                 <p>
                     hdbhbchdcbbckbchbckbsk</p>
@@ -678,7 +663,7 @@
                 </div>
             </div>
             <div class="swiper-slide box">
-                <img src="images/oil1.jpeg" alt="">
+                <img src="images/oil2.jpeg" alt="">
                 <h3>John Deo</h3>
                 <p>
                     hdbhbchdcbbckbchbckbskbc</p>
@@ -699,7 +684,7 @@
 <!-- reviews section ends -->
 
 <!-- blogs section start -->
-<!-- <section class="blogs" id="blogs">
+<section class="blogs" id="blogs">
 
     <h1 class="heading"> <span>our blogs</span></h1>
 
@@ -758,7 +743,7 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>
 
 <!-- blogs section ends -->
 
@@ -876,15 +861,14 @@
     <!--footer section end-->
 
 <!-- loader section start -->
-<div class="loader-container">
-    <img src="images/loader3.gif"  alt="loader image"></img>
-</div>
+<!-- <div class="loader-container">
+    <img src="loader3.gif"  alt="loader image"></img>
+</div> -->
 
 <!-- loader section end -->
       
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- custom js file link-->
      <script src="js/home2.js"></script>
-      <!--  <script src="js/login.js"></script> -->
 </body>
 </html>
